@@ -1,0 +1,89 @@
+
+
+<div class = "container" style = "margin-left:300px; margin-bottom:450px">
+
+<div class="row" style="background-color: plum; padding:20px">
+    <div class="col-3 offset-3">
+        <app-stacks [count]="42" [title]="'TOTAL'" [iconClass]="'fa fa-layer-group'" [color]="'purple'"></app-stacks>
+    </div>
+
+    <div class="col-3 ">
+        <app-stacks [count]="63" [title]="'SOLD'" [iconClass]="'fa fa-truck-moving'" [color]="'green'"></app-stacks>
+    </div>
+
+    <div class="col-3">
+        <app-stacks [count]="56" [title]="'STOCK'" [iconClass]="'fas fa-store-alt'" [color]="'blue'"></app-stacks>
+    </div>
+</div><br><br>
+
+<button class="btn btn-primary" (click)="navigateToAddProducts()" style="float:right">ADD PRODUCT</button><br><br>
+
+
+<h2 style="margin-left:400px;">Modern T-shirts</h2><br>
+
+<div class="row">
+    <div class="col-3">
+        <app-productsdes [price]="'200'" [code]="'Smiley T-shirt'" [image]="'assets/t.shirt1.jpg'" [color]="'yellow,black'"
+            [desc]="'printed smiley'">
+        </app-productsdes>
+    </div>
+    <div class="col-3">
+        <app-productsdes [price]="'150'" [code]="'Round-neck'" [image]="'assets/t.shirt2.jpg'"
+            [color]="'plain white,rounded neck'" [desc]="'Plain white'">
+        </app-productsdes>
+    </div>
+    <div class="col-3">
+        <app-productsdes [price]="'100'" [code]="'Party wear T-shirt'" [image]="'assets/t.shirt3.jpg'" [color]="'white,black,red'"
+            [desc]="'Plain white with soft cotton'">
+        </app-productsdes>
+    </div>
+    <div class="col-3">
+        <app-productsdes [price]="'300'" [code]="'Regular Fit'" [image]="'assets/t.shirt4.jpg'" [color]="'brown,orange'"
+            [desc]="'kashmir cotton'">
+        </app-productsdes>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-3">
+        <app-productsdes [price]="'400'" [code]="'Casual T-shirt'" [image]="'assets/t.shirt5.jpg'"
+            [color]="'white, red and green'" [desc]="'half-sleeve '">
+        </app-productsdes>
+    </div>
+    <div class="col-3">
+        <app-productsdes [code]="'Printed T-shirt'" [price] = "'500'" [image]="'assets/t.shirt7.jpg'" [color]="'red,blue,white'" [desc]="'printed material'">
+        </app-productsdes>
+    </div>
+    <div class="col-3"> 
+        <app-productsdes [code]="'sleeve less T-shirt'" [price] = "'400'" [image]="'assets/t.shirt8.jpg'" [color]="'black'" [desc]="'high quality cotton '">
+        </app-productsdes>
+    </div>
+</div><br>
+
+
+
+
+<div class="row">
+    <div class="col-3">
+        <app-productsdes [price]="'500'" [code]="'awesome shirt'" [image]="'assets/double1.jpg'" [color]="'blue and Red'"
+            [desc]="'blue with red sleeve'">
+        </app-productsdes>
+    </div>
+    <div class="col-3">
+        <app-productsdes [price]="'1500'" [code]="'double shirt'" [image]="'assets/double2.jpg'" [color]="'white and Blue'"
+            [desc]="'dark blue with white spots'">
+        </app-productsdes>
+    </div>
+    <div class="col-3">
+        <app-productsdes [price]="'800'" [code]="'double shirt'" [image]="'assets/double3.jpg'" [color]="'Red and Black'"
+            [desc]="'plain light brown'">
+        </app-productsdes>
+    </div>
+    <div class="col-3">
+        <app-productsdes [price]="'1000'" [code]="'double shirt'" [image]="'assets/double4.jpg'" [color]="'Light Blue'"
+            [desc]="'sky blue with red sleeve '">
+        </app-productsdes>
+    </div>
+</div>
+</div>
+
+ 

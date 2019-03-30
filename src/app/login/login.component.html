@@ -1,0 +1,33 @@
+<div class="parent">
+  <div class="child">
+    <div class="card text-center">
+
+      <app-loginalert [success]="success" [message]="text"></app-loginalert>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" datatoggle = "collapse" style="margin-left:20px; margin-top:20px;">Username:</span>
+        </div>
+        <input type=" text" class="form-control" [(ngModel)]="username" style="margin-right:20px; margin-top:20px;">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" style="margin-left:20px; margin-bottom:10px;">Password:</span>
+        </div>
+        <input type="password" class="form-control" [(ngModel)]="password" style="margin-right:20px; margin-bottom:10px;">
+      </div>
+
+
+      <div class="card-footer">
+        <a class="btn btn-info" style="float:left;">Forgot Password?</a>
+        <div>
+          <div class="text-right">
+            <button class="btn btn-success" style="float:right;" (click)="login()">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- <a class="btn btn-primary" routerLink="dashboard">Login</a>  // html level routing  -->
+
+  
